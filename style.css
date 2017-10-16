@@ -1,3 +1,4 @@
+/*logo and navigation styles*/
 #header {
   text-align: center;
   margin-top: 0;
@@ -10,32 +11,30 @@
   text-decoration: none;
   color: #8B8D90;
 }
-
 #header a:hover {
   text-decoration: underline;
   color: #7ED6F6;
 }
 
+/*content container styles*/
 #content {
   margin: 20px auto;
   text-align: center;
   width: 800px;
 }
-
-.homepage img {
-  width: 60%;
-}
-
-.homepage p {
-  width: 60%;
-}
-
 #content p {
   margin: 0 auto;
   text-align: left;
   font-family: 'Assistant', sans-serif;
 }
 
+/*homepage specific styles*/
+.homepage img {
+  width: 75%;
+}
+.homepage p {
+  width: 75%;
+}
 .homepage p:first-letter {
   font-size: 300%;
   font-weight: bold;
@@ -46,6 +45,7 @@
   padding-right: 3px;
 }
 
+/*page title*/
 h1 {
   font-size: 24px;
   color: #F57EC4;
@@ -53,6 +53,23 @@ h1 {
   text-align: left;
 }
 
+/*submit link*/
+h2 {
+  font-size: 22px;
+  color: #7ED6F6;
+  font-family: 'Tauri', sans-serif;
+  text-align: center;
+}
+h2 a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+h2 a:hover {
+  text-decoration: underline;
+  color: #FFF87F;
+}
+
+/*page subhead*/
 h3 {
   font-size: 22px;
   color: #7ED6F6;
@@ -60,8 +77,21 @@ h3 {
   text-align: left;
 }
 
+/*FAQ specific styles*/
 .q {
   font-weight: bold;
+}
+
+/*form specific styles */
+.form {
+  font-weight: bold;
+  font-size: 20px;
+}
+.formcontent {
+  width: 60%;
+}
+input {
+    font-family: 'Tauri', sans-serif;
 }
 
 /** media queries **/
@@ -72,7 +102,7 @@ h3 {
   #header {
     font-size: 14px;
   }
-  h1 {
+  h1, h2, h3 {
     font-size: 16px;
   }
   #content {
