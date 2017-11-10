@@ -28,6 +28,34 @@
   font-family: 'Assistant', sans-serif;
 }
 
+
+/*footer styles*/
+#footer {
+
+}
+#footerlogos {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  list-style-type: none;
+}
+#footerlogos li {
+  padding: 15px 18px;
+  display: inline-flex;
+}
+#footerlogos img {
+  width: 100%;
+}
+#footer_contact {
+
+}
+#footer_contact p {
+  font-size: 12px;
+  font-family: 'Assistant', sans-serif;
+  line-height: 5px;
+}
+
 /*homepage specific styles*/
 .homepage img {
   width: 75%;
