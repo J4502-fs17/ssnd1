@@ -18,8 +18,25 @@
     <a href="index.html"><img src="logo.png" /></a>
     <div id="navigation">
       <a href="index.html">Home</a> |
-      <a href="getinvolved_contest.html">Get involved</a> |
-      <a href="pastwinners_newspapers.html">Past winners</a> |
+        <div class="dropdown" id="getinvolved">
+          <button class="dropbtn">Get Involved</button>
+          <div class="dropdown-content">
+            <a href="getinvolved_contest.html">News Design Contest</a>
+            <a href="#">Scholarships</a>
+            <a href="#">Judges</a>
+          </div>
+        </div>
+       |
+       <div class="dropdown" id="pastwinners">
+         <button class="dropbtn">Past Winners</button>
+         <div class="dropdown-content">
+           <a href="pastwinners_newspapers.html">Newspapers</a>
+           <a href="pastwinners_magazines.html">Magazines</a>
+           <a href="pastwinners_multimedia.html">Web/Multimedia</a>
+           <a href="pastwinners_other.html">Other</a>
+         </div>
+       </div>
+      |
       <a href="faq.html">FAQ</a>
     </div>
   </div>
@@ -27,26 +44,34 @@
 <div id="content">
   <h1> Past Winners </h1>
   <h2> Other: </h2>
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Select a year</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#">2016</a>
-    <a href="#">2015</a>
-    <a href="#">2014</a>
-    <a href="#">2013</a>
-    <a href="#">2012</a>
-    <a href="#">2011</a>
-    <a href="#">2010</a>
-    <a href="#">2009</a>
-    <a href="#">2008</a>
-    <a href="#">2007</a>
-    <a href="#">2006</a>
-    <a href="#">2005</a>
-    <a href="#">2004</a>
-    <a href="#">2003</a>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Select a year</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">2016</a>
+      <a href="#">2015</a>
+      <a href="#">2014</a>
+      <a href="#">2013</a>
+      <a href="#">2012</a>
+      <a href="#">2011</a>
+      <a href="#">2010</a>
+      <a href="#">2009</a>
+      <a href="#">2008</a>
+      <a href="#">2007</a>
+      <a href="#">2006</a>
+      <a href="#">2005</a>
+      <a href="#">2004</a>
+      <a href="#">2003</a>
+    </div>
   </div>
 </div>
-</div>
 
+<footer>
+  <p class="contact">SSND<br />
+  1234 South Road St.<br />
+  Columbia, MO 65203<br />
+  573-000-0000</p>
+  <p class="sponsored">Sponsored by the University of Missouri and Michigan State University</p>
+</footer>
 
 </body>
+</html>
