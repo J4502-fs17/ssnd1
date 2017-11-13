@@ -20,7 +20,7 @@
 #content {
   margin: 20px auto;
   text-align: center;
-  width: 800px;
+  width: 80%;
 }
 #content p {
   margin: 0 auto;
@@ -30,10 +30,7 @@
 
 
 /*footer styles*/
-#footer {
-
-}
-#footerlogos {
+/*#footerlogos {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
@@ -54,14 +51,34 @@
   font-size: 12px;
   font-family: 'Assistant', sans-serif;
   line-height: 5px;
+}*/
+
+footer {
+   border-top: 1px solid #ccc;
+   width: 80%;
+   margin: 0 auto;
+}
+
+footer p {
+  font-size: 12px;
+  font-family: 'Assistant', sans-serif;
+}
+.contact {
+  float: left;
+  line-height: 13px;
+}
+
+.sponsored {
+  float: right;
+  text-align: right;
 }
 
 /*homepage specific styles*/
 .homepage img {
-  width: 75%;
+  width: 80%;
 }
 .homepage p {
-  width: 75%;
+  width: 80%;
 }
 .homepage p:first-letter {
   font-size: 300%;
@@ -82,19 +99,11 @@ h1 {
 }
 
 /*submit link*/
-h2 {
+.submitbutton {
   font-size: 22px;
-  color: #7ED6F6;
   font-family: 'Tauri', sans-serif;
   text-align: center;
-}
-h2 a, a:visited {
-  text-decoration: none;
-  color: black;
-}
-h2 a:hover {
-  text-decoration: underline;
-  color: #FFF87F;
+  color: #333333;
 }
 
 /*page subhead*/
