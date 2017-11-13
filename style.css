@@ -13,7 +13,46 @@
 }
 #header a:hover {
   text-decoration: underline;
-  color: #7ED6F6;
+  /*color: #7ED6F6;*/
+}
+
+/*dropdown navigation styles*/
+#navigation .dropbtn {
+    border: none;
+    cursor: pointer;
+    font-family: 'Tauri', sans-serif;
+    font-weight: bold;
+    color: #8B8D90;
+    font-size: 18px;
+    background-color: white;
+}
+#navigation .dropdown {
+    position: relative;
+    display: inline-block;
+}
+#navigation .dropdown-content {
+    display: none;
+    position: absolute;
+    color: #8B8D90;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#navigation .dropdown-content a {
+    color: #8B8D90;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+}
+
+#navigation .dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+#navigation .dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /*content container styles*/
@@ -30,45 +69,26 @@
 
 
 /*footer styles*/
-/*#footerlogos {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  list-style-type: none;
-}
-#footerlogos li {
-  padding: 15px 18px;
-  display: inline-flex;
-}
-#footerlogos img {
-  width: 100%;
-}
-#footer_contact {
-
-}
-#footer_contact p {
-  font-size: 12px;
-  font-family: 'Assistant', sans-serif;
-  line-height: 5px;
-}*/
-
 footer {
    border-top: 1px solid #ccc;
    width: 80%;
    margin: 0 auto;
 }
-
 footer p {
   font-size: 12px;
   font-family: 'Assistant', sans-serif;
+  /*display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "a b";*/
 }
 .contact {
+  /*grid-area: a;*/
   float: left;
   line-height: 13px;
 }
-
 .sponsored {
+  /*grid-area: b;*/
   float: right;
   text-align: right;
 }
@@ -104,6 +124,7 @@ h1 {
   font-family: 'Tauri', sans-serif;
   text-align: center;
   color: #333333;
+  background-color: #FFF87F;
 }
 
 h2 {
@@ -137,7 +158,6 @@ h3 {
 input {
     font-family: 'Tauri', sans-serif;
 }
-
 
 /* Dropdown Button */
 .dropbtn {
@@ -184,15 +204,12 @@ input {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-
-
-
 /** media queries **/
 @media screen and (max-width: 450px){
   #header img {
     width: 200px;
   }
-  #header {
+  #header, .dropbtn {
     font-size: 14px;
   }
   h1, h2, h3 {
@@ -201,4 +218,9 @@ input {
   #content {
     width: 100%;
   }
+  .sponsored {
+    float: left;
+    text-align: left;
+  }
+
 }
