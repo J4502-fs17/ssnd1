@@ -15,6 +15,9 @@
   text-decoration: underline;
   /*color: #7ED6F6;*/
 }
+#navigation .divider {
+  display: inline;
+}
 
 /*dropdown navigation styles*/
 #navigation .dropbtn {
@@ -35,22 +38,22 @@
     position: absolute;
     color: #8B8D90;
     background-color: #f9f9f9;
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+#navigation a {
+  padding: 12px;
+}
 #navigation .dropdown-content a {
     color: #8B8D90;
-    padding: 12px 16px;
+    padding: 12px;
     text-decoration: none;
     display: block;
     font-size: 12px;
 }
-
 #navigation .dropdown-content a:hover {
   background-color: #f1f1f1
 }
-
 #navigation .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -157,7 +160,7 @@ input {
 }
 
 /* Dropdown Button */
-.dropbtn {
+#content .dropbtn {
     background-color: #FFF87F;
     color: black;
     padding: 16px;
@@ -166,19 +169,16 @@ input {
     cursor: pointer;
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
+#content .dropbtn:hover, .dropbtn:focus {
     background-color: #FFF87F;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
+#content .dropdown {
     position: center;
     display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+#content .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -187,19 +187,83 @@ input {
     z-index: 1;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
+#content .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
+    font-family: 'Tauri', sans-serif;
     display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+#content .dropdown-content a:hover {background-color: #f1f1f1}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+
+/*grid for past winners*/
+h4 {
+  /*heading styles for competition categories*/
+  font-size: 20px;
+  font-family: 'Tauri', sans-serif;
+  text-align: left;
+  color: #7ED6F6;
+}
+.winnergrid{
+display: grid;
+grid-gap: 10px;
+justify-content: center;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas:
+"a b c"
+"d e f";
+}
+
+#content .awardtitle {
+  text-align: center;
+  font-weight: bold;
+}
+#content .winnername {
+  text-align:center;
+}
+
+.winnergrid img {
+  width: 200px;
+}
+
+.winner1 {
+  grid-area: a;
+}
+
+.winner2 {
+  grid-area: b;
+}
+
+.winner3 {
+  grid-area: c;
+}
+
+.winner4 {
+  grid-area: d;
+}
+
+.winner5 {
+  grid-area: e;
+}
+
+.winner6 {
+  grid-area: f;
+}
+
+.winner7 {
+  grid-area: g;
+}
+
+.winner8 {
+  grid-area: h;
+}
+
+
+
 
 /** media queries **/
 @media screen and (max-width: 450px){
@@ -219,8 +283,20 @@ input {
     float: left;
     text-align: left;
   }
+  .winnergrid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f"
+    "g";
+  }
 
 }
+
 
 
 /*the archive*/
