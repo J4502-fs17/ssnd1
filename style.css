@@ -80,18 +80,12 @@ footer {
 footer p {
   font-size: 12px;
   font-family: 'Assistant', sans-serif;
-  /*display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-  "a b";*/
 }
-.contact {
-  /*grid-area: a;*/
+footer .contact {
   float: left;
   line-height: 13px;
 }
-.sponsored {
-  /*grid-area: b;*/
+footer .sponsored {
   float: right;
   text-align: right;
 }
@@ -165,6 +159,7 @@ input {
     color: black;
     padding: 16px;
     font-size: 16px;
+    font-family: 'Tauri', sans-serif;
     border: none;
     cursor: pointer;
 }
@@ -197,7 +192,7 @@ input {
 
 #content .dropdown-content a:hover {background-color: #f1f1f1}
 
-.show {display:block;}
+#content .show {display:block;}
 
 
 /*grid for past winners*/
@@ -208,22 +203,25 @@ h4 {
   text-align: left;
   color: #7ED6F6;
 }
-.winnergrid{
-display: grid;
-grid-gap: 10px;
-justify-content: center;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-areas:
-"a b c"
-"d e f";
+.winnergrid {
+  display: grid;
+  grid-gap: 10px;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "a b c"
+  "d e f"
+  "g h .";
 }
 
 #content .awardtitle {
   text-align: center;
   font-weight: bold;
+  font-family: 'Tauri', sans-serif;
 }
 #content .winnername {
   text-align:center;
+  font-family: 'Tauri', sans-serif;
 }
 
 .winnergrid img {
@@ -262,18 +260,32 @@ grid-template-areas:
   grid-area: h;
 }
 
-
-
-
 /** media queries **/
+@media screen and (max-width: 650px){
+  .winnergrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "a b"
+    "c d"
+    "e f"
+    "g h";
+  }
+  .winnergrid img {
+    width: 75%;
+  }
+}
+
 @media screen and (max-width: 450px){
   #header img {
     width: 200px;
   }
-  #header, .dropbtn {
-    font-size: 14px;
+  #header {
+    font-size: 12px;
   }
-  h1, h2, h3 {
+  #navigation .dropbtn {
+    font-size: 12px;
+  }
+  h1, h2, h3, h4 {
     font-size: 16px;
   }
   #content {
@@ -292,33 +304,7 @@ grid-template-areas:
     "d"
     "e"
     "f"
-    "g";
+    "g"
+    "h";
   }
-
 }
-
-
-
-/*the archive*/
-/*homepage slideshow */
-/*#slideshow {
-    margin: 50px auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
-}
-
-#slideshow > div {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-}
-
-#slideshow img {
-  max-width: 500px;
-  height: 500px;
-}*/
