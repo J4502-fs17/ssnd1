@@ -97,6 +97,7 @@ footer .sponsored {
 
 video {
   width: 80%;
+  margin: 0 auto;
 }
 .intro:first-letter {
   font-size: 300%;
