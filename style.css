@@ -94,6 +94,10 @@ footer .sponsored {
 .homepage img {
   width: 80%;
 }
+
+video {
+  width: 80%;
+}
 .intro:first-letter {
   font-size: 300%;
   font-weight: bold;
@@ -114,11 +118,14 @@ h1 {
 
 /*submit link*/
 .submitbutton {
-  font-size: 22px;
-  font-family: 'Tauri', sans-serif;
   text-align: center;
-  color: #333333;
   background-color: #FFF87F;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  font-family: 'Tauri', sans-serif;
+  border: none;
+  cursor: pointer;
 }
 
 h2 {
@@ -177,7 +184,7 @@ input {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    padding: 0px 24px 0px 24px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -306,5 +313,8 @@ h4 {
     "f"
     "g"
     "h";
+  }
+  video {
+    90%;
   }
 }
